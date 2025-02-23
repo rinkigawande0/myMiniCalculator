@@ -1,0 +1,32 @@
+ button {
+    transition: transform 0.5s ease-in-out;
+  }
+  
+button:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+  } */
+  button {
+    transition: transform 0.5s ease-in-out;
+    animation: moveButton 2s infinite;
+    position: relative;
+  }
+  @keyframes moveButton{
+    0%{
+        transform: translate3d(10);
+    }
+    50%{
+        transform: translate3d(20px);
+    }
+    100%{
+        transform: translate3d(0);
+    }
+  }
+  
+  button:hover {
+    transform: translateX(10px) scale(1.2);
+    cursor: pointer;
+  }
+
+  
+  

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mini Calculator</title>
+</head>
+<body>
+    <input type="number" id="firstNumber" placeholder="Enter 1st number" >  
+    <input type="number" id="secondNumber" placeholder="Enter 2nd number" >
+
+    <br><br>
+    <button onclick="getAdd()">Add </button>
+    <button onclick="getSubtract()">Subtract</button>
+    <button onclick="getMultiply()">Multiply</button>
+    <button onclick="getDivide()">Divide</button>
+    <button onclick="reset()">Reset</button>
+    <script>
+        // for value add
+        function getAdd(){
+            let firstN = Number(document.getElementById("firstNumber").value);
+            console.log(firstN);
+            
+            let secondN = Number(document.getElementById("secondNumber").value);
+            console.log(secondN);
+        
+            alert(firstN+secondN);
+
+        } 
+        //for value subtract
+        function getSubtract(){
+            let firstN = Number(document.getElementById("firstNumber").value);
+            console.log(firstN);
+            
+            let secondN = Number(document.getElementById("secondNumber").value);
+            console.log(secondN);
+        
+            alert(firstN-secondN);
+            
+        }
+        // for value multiply
+        function getMultiply(){
+            let firstN = Number(document.getElementById("firstNumber").value);
+            console.log(firstN);
+            
+            let secondN = Number(document.getElementById("secondNumber").value);
+            console.log(secondN);
+        
+            alert(firstN*secondN);
+            
+        } 
+        // for value divide
+        function getDivide(){
+            let firstN = Number(document.getElementById("firstNumber").value);
+            console.log(firstN);
+            
+            let secondN = Number(document.getElementById("secondNumber").value);
+            console.log(secondN);
+        
+            alert(firstN/secondN);
+            
+        } 
+        function reset(){
+            document.getElementById("firstNumber").value="";
+            document.getElementById("secondNumber").value="";
+        }
+    </script>
+
+</body>
+</html>
